@@ -20,11 +20,13 @@
 </head>
 <body>
     <script>
-        console.log(document.getElementById("range").value);
-        for(i=0;document.getElementsByClassName("user").length>i;i++){
-            document.getElementsByTagName("iframe")[i].style.width = document.getElementById("range").value + "px";
-            var tate = document.getElementById("range").value / 16;
-            document.getElementsByTagName("iframe")[i].style.height = tate*9 + "px";
+        function siiize(){
+            console.log(document.getElementById("range").value);
+            for(i=0;document.getElementsByClassName("user").length>i;i++){
+                document.getElementsByTagName("iframe")[i].style.width = document.getElementById("range").value + "px";
+                var tate = document.getElementById("range").value / 16;
+                document.getElementsByTagName("iframe")[i].style.height = tate*9 + "px";
+            }
         }
     </script>
     <div id="header">
